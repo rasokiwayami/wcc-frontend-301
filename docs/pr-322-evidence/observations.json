@@ -1,0 +1,72 @@
+{
+  "beforeCommit": "57cb378ad30bb27ff096acaebe97d33985e1cf66",
+  "afterCommit": "df535cf47b4e3ead57b55d2e31ad5ebb56ff1fd2",
+  "syntheticData": true,
+  "browserObservations": {
+    "before": {
+      "url": "http://127.0.0.1:3397/mentorship/mentors?language=JAVA",
+      "names": ["Java Mentor (mock)", "Python Mentor (mock)"],
+      "language": "JAVA"
+    },
+    "after": {
+      "url": "http://127.0.0.1:3297/mentorship/mentors?language=JAVA",
+      "names": ["Java Mentor (mock)"],
+      "language": "JAVA"
+    },
+    "afterClear": {
+      "url": "http://127.0.0.1:3297/mentorship/mentors",
+      "names": ["Java Mentor (mock)", "Python Mentor (mock)"]
+    }
+  },
+  "backendRequests": [
+    {
+      "variant": "before",
+      "method": "GET",
+      "path": "/api/cms/v1/mentorship/mentors",
+      "query": "",
+      "boundLanguages": [],
+      "returnedIds": [9001, 9002],
+      "returnedNames": ["Java Mentor (mock)", "Python Mentor (mock)"]
+    },
+    {
+      "variant": "before",
+      "method": "GET",
+      "path": "/api/cms/v1/mentorship/mentors",
+      "query": "language=JAVA",
+      "boundLanguages": [],
+      "returnedIds": [9001, 9002],
+      "returnedNames": ["Java Mentor (mock)", "Python Mentor (mock)"]
+    },
+    {
+      "variant": "after",
+      "method": "GET",
+      "path": "/api/cms/v1/mentorship/mentors",
+      "query": "",
+      "boundLanguages": [],
+      "returnedIds": [9001, 9002],
+      "returnedNames": ["Java Mentor (mock)", "Python Mentor (mock)"]
+    },
+    {
+      "variant": "after",
+      "method": "GET",
+      "path": "/api/cms/v1/mentorship/mentors",
+      "query": "languages=JAVA",
+      "boundLanguages": ["JAVA"],
+      "returnedIds": [9001],
+      "returnedNames": ["Java Mentor (mock)"]
+    },
+    {
+      "variant": "after",
+      "method": "GET",
+      "path": "/api/cms/v1/mentorship/mentors",
+      "query": "",
+      "boundLanguages": [],
+      "returnedIds": [9001, 9002],
+      "returnedNames": ["Java Mentor (mock)", "Python Mentor (mock)"]
+    }
+  ],
+  "screenshots": {
+    "mentor-language-before.jpg": "49b6caaad622f7f148b8fbbd8271e3f84eb203f23616cd9344cfd5af0f9327fb",
+    "mentor-language-after.jpg": "002c80028d9da0a4fe6df22991df3316adaa824ff85782b2f9c11b0ebd1bf216"
+  }
+}
